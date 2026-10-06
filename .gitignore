@@ -1,0 +1,30 @@
+# =============================================================================
+# SECURITY: never commit secrets. The .env holds a private key and a GitHub
+# token and MUST stay out of version control and out of any pushed commit.
+# =============================================================================
+.env
+.env.*
+*.key
+*.keystore
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Test / tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# GenLayer build artifacts
+artifacts/
+*.abi.json
+
+# OS / editor noise
+.DS_Store
+*.swp
+.idea/
+.vscode/
